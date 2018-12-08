@@ -1,0 +1,13 @@
+version: 0.1
+
+phases:
+  pre_build:
+    commands:
+      - $(aws ecr get-login --no-include-email --region $REGION)
+  build:
+    commands:
+      - docker build -t $REPOSITORY:$TAG .
+      - docker $REPOSITORY:$TAG $ID.ecr.$REGION.amazonaws.com/$REPOSITORY:$TAG
+    
+  post_build:
+    - docker push $ID.ecr.$REGION.amazonaws.com/$REPOSITORY:$TAG
