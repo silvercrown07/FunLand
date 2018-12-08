@@ -1,0 +1,10 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - dotnet publish -c Release FunLand.Web
+
+artifacts:
+  files:
+    - FunLand.Web/bin/Release/netcoreapp2.1/publish/*
