@@ -7,8 +7,8 @@ phases:
   build:
     commands:
       - docker build -t $REPOSITORY:$TAG .
-      - docker tag $REPOSITORY:$TAG $ID.ecr.$REGION.amazonaws.com/$REPOSITORY:$TAG
+      - docker tag $REPOSITORY:$TAG $ID.dkr.ecr.$REGION.amazonaws.com/$REPOSITORY:$TAG
     
   post_build:
     commands:
-      - docker push $ID.ecr.$REGION.amazonaws.com/$REPOSITORY:$TAG
+      - docker push $ID.dkr.ecr.$REGION.amazonaws.com/$REPOSITORY:$TAG
