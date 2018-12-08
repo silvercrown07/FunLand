@@ -9,3 +9,4 @@ artifacts:
   files:
     - FunLand.Web/bin/Release/netcoreapp2.1/publish/*
     - buildspec.combustion.yml
+    - Dockerfile
