@@ -5,7 +5,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="wwwroot\" />
+        <Content Remove="appsettings.json" />
+        <Content Remove="appsettings.*.json" />
+        <Content Remove="wwwroot/" />
     </ItemGroup>
 
     <ItemGroup>

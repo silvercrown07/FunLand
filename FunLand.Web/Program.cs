@@ -20,7 +20,6 @@ namespace FunLand.Web
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .UseKestrel(options => options.Listen(IPAddress.Loopback, 5000));
+                .UseStartup<Startup>();
     }
 }
