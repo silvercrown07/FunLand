@@ -10,4 +10,5 @@ phases:
       - docker $REPOSITORY:$TAG $ID.ecr.$REGION.amazonaws.com/$REPOSITORY:$TAG
     
   post_build:
-    - docker push $ID.ecr.$REGION.amazonaws.com/$REPOSITORY:$TAG
+    commands:
+      - docker push $ID.ecr.$REGION.amazonaws.com/$REPOSITORY:$TAG
