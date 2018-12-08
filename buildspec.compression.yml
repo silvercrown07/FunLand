@@ -8,4 +8,4 @@ phases:
 artifacts:
   files:
     - FunLand.Web/bin/Release/netcoreapp2.1/publish/*
-    - build.combustion.yml
+    - buildspec.combustion.yml
