@@ -14,6 +14,7 @@ nupkg/
 *.userosscache
 *.sln.docstates
 *.db
+!FunLand.db
 
 # Build results
 [Dd]ebug/
