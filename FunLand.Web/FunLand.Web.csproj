@@ -9,6 +9,10 @@
         <Content Remove="appsettings.*.json" />
         <Content Remove="wwwroot/" />
     </ItemGroup>
+    
+    <ItemGroup>
+        <Content Include="FunLand.db" CopyToPublishDirectory="PreserveNewest" />
+    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="AutoMapper" Version="8.0.0" />
